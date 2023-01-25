@@ -5,5 +5,7 @@ const app = express();
 app.use(express.static('dist/client/'))
 app.use(ssrHandler);
 
-app.listen(process.env.PORT);
-console.log(`Listening on port ${process.env.PORT}`);
+let port = 8080;
+
+app.listen(port);
+console.log(`Listening on port ${port}`);
